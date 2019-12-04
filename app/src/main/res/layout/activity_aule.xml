@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="listaAule.AulaActivity"
+    android:background="#303030">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:id="@+id/appbarlayout_id">
+
+
+        <com.google.android.material.appbar.CollapsingToolbarLayout
+            android:id="@+id/collapsingtoolbar_id"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#00BFA5"
+            app:contentScrim="?attr/colorPrimary"
+            app:expandedTitleMarginEnd="64dp"
+            app:expandedTitleMarginStart="48dp"
+            app:layout_scrollFlags="exitUntilCollapsed|scroll"
+            app:title="Nome Aula"
+            >
+
+            <androidx.appcompat.widget.Toolbar
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:theme="@style/ThemeOverlay.AppCompat.Light"
+                app:layout_collapseMode="pin"></androidx.appcompat.widget.Toolbar>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="286dp"
+                android:orientation="horizontal">
+
+
+                <ImageView
+                    android:id="@+id/aa_thumbnail"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/loading_shape" />
+
+
+            </LinearLayout>
+
+
+        </com.google.android.material.appbar.CollapsingToolbarLayout>
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="match_parent"
+        android:layout_height="560dp"
+        android:background="@drawable/gradient_1"
+        android:padding="0dp"
+        app:layout_anchor="@+id/scrollView2"
+        app:layout_anchorGravity="center"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:minHeight="700dp"
+            android:orientation="vertical">
+
+
+            <CheckBox
+                android:id="@+id/prenotato"
+                android:layout_width="104dp"
+                android:layout_height="28dp"
+                android:layout_marginBottom="560dp"
+                android:clickable="false"
+                android:text="prenotato"
+                android:textColor="#000000"
+                android:theme="@style/checkBoxStyle"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.934"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/prenota"
+                app:layout_constraintVertical_bias="0.098" />
+
+            <Button
+                android:id="@+id/prenota"
+                android:layout_width="104dp"
+                android:layout_height="41dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:background="@drawable/btn_gradient_style"
+                android:text="PRENOTATI"
+                android:textAllCaps="false"
+                android:textColor="#ffff"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.934"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.024" />
+
+            <TextView
+                android:id="@+id/aa_nome_aula"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nome Aula"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.049"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/aa_descrizione"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Descrizione Aula"
+                android:textColor="#fff"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.256" />
+
+            <TextView
+                android:id="@+id/aa_locazione"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Categoria"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.045"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/aa_nome_aula" />
+
+            <TextView
+                android:id="@+id/aa_contatore"
+                android:layout_width="61dp"
+                android:layout_height="25dp"
+                android:background="@drawable/rating_background"
+                android:drawableLeft="@android:drawable/ic_menu_myplaces"
+                android:paddingRight="5dp"
+                android:text="0.0"
+                android:textColor="#000"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.045"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/aa_locazione" />
+
+            <TextView
+                android:id="@+id/aa_coda"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Coda"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.042"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/aa_contatore"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <TextView
+                android:id="@+id/timer"
+                android:layout_width="105dp"
+                android:layout_height="22dp"
+                android:layout_marginBottom="593dp"
+                android:textAlignment="center"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.938"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/prenotato"
+                app:layout_constraintVertical_bias="0.0" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.core.widget.NestedScrollView>
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

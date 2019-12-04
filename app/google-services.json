@@ -1,0 +1,77 @@
+{
+  "project_info": {
+    "project_number": "951688553856",
+    "firebase_url": "https://liberaula-5c9ec.firebaseio.com",
+    "project_id": "liberaula-5c9ec",
+    "storage_bucket": "liberaula-5c9ec.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:951688553856:android:af3701a7ef81e807ec0d65",
+        "android_client_info": {
+          "package_name": "com.example.liberaula"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "951688553856-ba6gmo64gnqpbimr5il614cvqlaui8sf.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.liberaula",
+            "certificate_hash": "41d6910508b53ea6850fbed83b1d4a712b6bf401"
+          }
+        },
+        {
+          "client_id": "951688553856-lonbsb78tg06kapk8v2d8vtgb3fepjaa.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCKxyheluMLDM-sv2eMlDOXInP4sD3bUsM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "951688553856-lonbsb78tg06kapk8v2d8vtgb3fepjaa.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:951688553856:android:f9f46aa5f3ef3610ec0d65",
+        "android_client_info": {
+          "package_name": "com.example.tornellapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "951688553856-lonbsb78tg06kapk8v2d8vtgb3fepjaa.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCKxyheluMLDM-sv2eMlDOXInP4sD3bUsM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "951688553856-lonbsb78tg06kapk8v2d8vtgb3fepjaa.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
