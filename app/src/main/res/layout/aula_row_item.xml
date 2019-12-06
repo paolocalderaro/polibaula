@@ -8,6 +8,10 @@
     android:layout_margin="5dp"
     android:background="@drawable/bgg"
     android:elevation="90dp"
+
+    android:outlineSpotShadowColor="#7C7C7C"
+    android:outlineAmbientShadowColor="#000000"
+
     android:orientation="vertical"
     app:cardCornerRadius="12dp">
 
@@ -49,22 +53,13 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="116dp"
             android:layout_marginTop="8dp"
+            android:fontFamily="sans-serif"
             android:text="Nome aula"
             android:textColor="#fff"
-            android:textSize="20dp"
+            android:textSize="16dp"
             android:textStyle="bold"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
-
-        <TextView
-            android:id="@+id/descrizione"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="116dp"
-            android:text="Descrizione"
-            android:textColor="#fff"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/nome_aula" />
 
         <TextView
             android:id="@+id/locazione"
@@ -73,8 +68,36 @@
             android:layout_marginStart="116dp"
             android:text="Locazione"
             android:textColor="#fff"
+            android:textSize="11dp"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/descrizione" />
+            app:layout_constraintTop_toBottomOf="@+id/nome_aula" />
+
+        <TextView
+            android:id="@+id/postiliberi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="19dp"
+            android:fontFamily="sans-serif-medium"
+            android:text="TextView"
+            android:textSize="14dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/cardView"
+            app:layout_constraintTop_toBottomOf="@+id/descrizione"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <TextView
+            android:id="@+id/descrizione"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="116dp"
+            android:text="Descrizione"
+            android:textColor="#fff"
+            android:textSize="11dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/locazione" />
 
         <TextView
             android:id="@+id/contatore"
@@ -82,7 +105,7 @@
             android:layout_height="24dp"
             android:layout_marginTop="8dp"
             android:layout_marginEnd="8dp"
-            android:background="@drawable/btn_gradient_style"
+            android:background="@drawable/sfondorounded"
             android:drawableLeft="@android:drawable/ic_menu_myplaces"
             android:paddingRight="5dp"
             android:text="0.0"
@@ -90,6 +113,7 @@
             android:textColor="#353232"
             android:textSize="15sp"
             android:textStyle="bold"
+
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
@@ -99,6 +123,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="3dp"
             android:text="Coda:"
+            android:textSize="13dp"
             android:textAlignment="center"
             android:textColor="#CD302B2B"
             app:layout_constraintBottom_toBottomOf="parent"
@@ -106,19 +131,6 @@
             app:layout_constraintHorizontal_bias="0.978"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/contatore"
-            app:layout_constraintVertical_bias="0.0" />
-
-        <TextView
-            android:id="@+id/postiliberi"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="8dp"
-            android:text="TextView"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toEndOf="@+id/cardView"
-            app:layout_constraintTop_toBottomOf="@+id/locazione"
             app:layout_constraintVertical_bias="0.0" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
