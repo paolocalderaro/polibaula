@@ -3,6 +3,9 @@ package com.example.liberaula;
 import androidx.appcompat.app.AppCompatActivity;
 import android.app.PendingIntent;
 import android.content.Intent;
+import android.graphics.drawable.AnimationDrawable;
+import android.graphics.drawable.Drawable;
+import android.graphics.drawable.DrawableContainer;
 import android.nfc.NdefMessage;
 import android.nfc.NdefRecord;
 import android.nfc.NfcAdapter;
@@ -118,6 +121,10 @@ public class NfcActivity extends AppCompatActivity {
                         @Override
                         public void run() {
                             testo.setText("l'aula "+aulaLettaT.nome+" è piena");
+                            //animazione colorata:
+                            RelativeLayout layout=findViewById(R.id.layout);
+                            Drawable gradient=getResources().getDrawable(R.drawable.gradient_rosso);
+                            layout.setBackground(gradient);
 
                         }
                     });
@@ -130,6 +137,10 @@ public class NfcActivity extends AppCompatActivity {
                         public void run() {
                             int postiDisp= (int) ((int) aulaLettaT.capienza-(aulaLettaT.contatore+aulaLettaT.coda));
                             testo.setText("prego, entrare nell'aula. ci sono ancora " +postiDisp+" posti disponibili");
+                            //animazione colorata:
+                            RelativeLayout layout=findViewById(R.id.layout);
+                            Drawable gradient=getResources().getDrawable(R.drawable.gradient_verde);
+                            layout.setBackground(gradient);
 
                         }
                     });
