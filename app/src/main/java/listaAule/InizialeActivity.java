@@ -71,6 +71,8 @@ public class InizialeActivity extends AppCompatActivity {
                 viewHolder.setLocazione(model.getLocazione());
                 viewHolder.setContatore(model.getContatore());
                 viewHolder.setCoda(model.getCoda());
+                //new
+                viewHolder.setLiberi(model.getCoda(),model.getContatore(), model.getCapienza());
 
 
                 viewHolder.mView.setOnClickListener(new View.OnClickListener() {
@@ -128,6 +130,11 @@ public class InizialeActivity extends AppCompatActivity {
         public void setCoda(long coda){
             TextView coda_aula = mView.findViewById(R.id.coda);
             coda_aula.setText("prenotati: "+(coda));
+        }
+
+        public void setLiberi(long coda, long contatore, long capienza){
+            TextView liberi=mView.findViewById(R.id.postiliberi);
+            liberi.setText("posti liberi: "+(capienza-(coda+contatore))+"/"+capienza);
         }
 
 

@@ -79,6 +79,7 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
         holder.tv_coda.setText((int)mData.get(position).getCoda());
         holder.tv_locazione.setText(mData.get(position).getLocazione());
 
+
         // Load Image from the internet and set it into Imageview using Glide
 
         Glide.with(mContext).load(mData.get(position).getImage_url()).apply(option).into(holder.img_thumbnail);
@@ -98,6 +99,7 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
         TextView tv_contatore ;
         TextView tv_coda;
         TextView tv_locazione;
+        TextView tv_liberi;
         ImageView img_thumbnail;
         LinearLayout view_container;
 
@@ -111,6 +113,8 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
             tv_contatore = itemView.findViewById(R.id.contatore);
             tv_coda = itemView.findViewById(R.id.coda);
             img_thumbnail = itemView.findViewById(R.id.thumbnail);
+
+            tv_liberi=itemView.findViewById(R.id.postiliberi);
 
         }
     }

@@ -195,6 +195,7 @@ public class AulaActivity extends AppCompatActivity {
         tv_contatore.setText(""+(contatore));
         tv_coda.setText("prenotati: "+(coda));
 
+
         collapsingToolbarLayout.setTitle(nome);
 
 
