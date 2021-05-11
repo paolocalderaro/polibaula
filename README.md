@@ -1,5 +1,6 @@
 # polibaula
-https://drive.google.com/file/d/1BbBFExKTI4leGH_sGl8Eks4BS4qWfbPe/view?usp=sharing
+![GitHub Logo](/polibaula/logo.png)
+Format: ![Alt Text](url)
 
 creation and development of an android application to monitor the state of crowding inside the classrooms of Politecnico di Bari by exploiting the potential of NFC technology. 
 During the project, the AGILE design and development procedures were followed. a web interface was also developed for the presentation of the devised service. 
